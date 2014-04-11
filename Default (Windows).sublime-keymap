@@ -1,3 +1,3 @@
 [
-	{ "keys": ["ctrl+alt+c"], "command": "cmd_launch" }
+	{ "keys": ["ctrl+shift+c"], "command": "cmd_launch" }
 ]

@@ -28,7 +28,7 @@ def current_dir(window):
         return os.path.dirname(active_file_name)
 
 
-class TortoiseCMDPromtCommand(sublime_plugin.WindowCommand):
+class CmdLaunchCommand(sublime_plugin.WindowCommand):
 	def run(self, paths=None, isHung=False):
 		dir = current_dir(self.window)
 
