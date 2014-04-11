@@ -1,0 +1,5 @@
+[
+	{ "caption": "-" },
+	{ "caption": "CMD Prompt", "command": "cmd_launch", "args": {"paths":[]}}
+	{ "caption": "-", "id": "end" }
+]

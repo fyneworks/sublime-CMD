@@ -1,0 +1,3 @@
+[
+	{ "keys": ["ctrl+shit+c"], "command": "cmd_launch" }
+]
