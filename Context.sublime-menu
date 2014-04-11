@@ -1,3 +1,3 @@
 [
-     { "label":"Command Prompt", "command": "cmd" }
+     { "caption":"CMD from file location", "command": "cmd_from_file_context" }
 ]

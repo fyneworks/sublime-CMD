@@ -1,5 +1,5 @@
 [
 	{ "caption": "-" },
-	{ "caption": "CMD Prompt", "command": "cmd", "args": {"paths":[]}},
+	{ "caption": "CMD Here", "command": "cmd_from_menu", "args": {"paths":[]}},
 	{ "caption": "-", "id": "end" }
 ]
