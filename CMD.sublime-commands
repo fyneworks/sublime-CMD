@@ -1,3 +1,3 @@
 [
-	{ "caption": "CMD Prompt: Launch", "command": "cmd_launch" }
+	{ "caption": "CMD Prompt: Launch", "command": "cmd" }
 ]

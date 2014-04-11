@@ -28,12 +28,31 @@ def current_dir(window):
         return os.path.dirname(active_file_name)
 
 
-class CmdLaunchCommand(sublime_plugin.WindowCommand):
+class CmdCommand(sublime_plugin.WindowCommand):
 	def run(self, paths=None, isHung=False):
 		dir = current_dir(self.window)
 
 		if not dir:
-			return
+            return
 		
-		command = 'cd %s & start cmd' % (dir)
-		os.system(command)
+        file_name=self.view.file_name()
+        path=file_name.split("\\")
+        current_driver=path[0]
+        path.pop()
+        current_directory="\\".join(path)
+        command= "cd "+current_directory+" & "+current_driver+" & start cmd"
+        os.system(command)
+		
+		
+"""
+import os, sublime_plugin
+class CmdCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        file_name=self.view.file_name()
+        path=file_name.split("\\")
+        current_driver=path[0]
+        path.pop()
+        current_directory="\\".join(path)
+        command= "cd "+current_directory+" & "+current_driver+" & start cmd"
+        os.system(command)
+"""
